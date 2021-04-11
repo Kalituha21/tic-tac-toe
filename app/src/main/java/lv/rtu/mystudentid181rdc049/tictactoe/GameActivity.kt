@@ -14,11 +14,11 @@ class GameActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_game)
 
-        this.initializeGame()
+        this.setupGame()
         this.startNextTurn()
     }
 
-    private fun initializeGame() {
+    private fun setupGame() {
         var player1: String = "Player 1"
         var player2: String = "Player 2"
         val gameMode: Int = intent.getIntExtra("GAME_MODE", GameModes.PVE.playersCount)
@@ -27,12 +27,12 @@ class GameActivity : AppCompatActivity() {
             val starts: Char = intent.getCharExtra("STARTS",  PlayerIdentities.PLAYER_1.identity)
 
             if (starts == PlayerIdentities.PLAYER_1.identity) {
-                player1 = intent.getStringExtra("PLAYER") ?: player1
+                player1 = intent.getStringExtra("PLAYER") ?: "Player"
                 player2 = "Computer"
                 this.bot = Bot(PlayerIdentities.PLAYER_2.identity)
             } else {
                 player1 = "Computer"
-                player2 = intent.getStringExtra("PLAYER") ?: player2
+                player2 = intent.getStringExtra("PLAYER") ?: "Player"
                 this.bot = Bot(PlayerIdentities.PLAYER_1.identity)
             }
         } else {

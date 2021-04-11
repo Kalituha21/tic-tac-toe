@@ -11,7 +11,7 @@ class EndActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_end)
 
-        val winner: String = intent.getStringExtra("Winner") ?: ""
+        val winner: String = intent.getStringExtra("WINNER") ?: ""
         val winnerHolder = findViewById<TextView>(R.id.winnerName)
         winnerHolder.text = winner
     }
