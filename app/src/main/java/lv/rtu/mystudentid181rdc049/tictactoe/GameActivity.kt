@@ -82,6 +82,8 @@ class GameActivity : AppCompatActivity() {
         }
 
         val coordinate: Pair<Int, Int> = this.bot.getPlayCoordinates(this.gameData.gameBoard)
+
+        Thread.sleep(240)
         this.play(coordinate.first, coordinate.second)
     }
 
@@ -94,8 +96,9 @@ class GameActivity : AppCompatActivity() {
 
     private fun finishGame(winner: String) {
         val intent = Intent(this, EndActivity::class.java)
-        intent.putExtra("WINNER", winner)
 
+        intent.putExtra("WINNER", winner)
+        Thread.sleep(240)
         startActivity(intent)
     }
 
