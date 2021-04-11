@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">Tic Tac Toe</string>
+
+    <string name="homePage">Tic Tac Toe</string>
+    <string name="buttonSingle">PVE mode (1 player)</string>
+    <string name="buttonTwo">PVP mode (2 players)</string>
+    <string name="buttonExit">Exit game</string>
+
+    <string name="setupPvePage">Enter your name</string>
+    <string name="hintPlayerName">Name</string>
+    <string name="buttonStartPlayer">Start as a 1 player</string>
+    <string name="buttonStartBot">Start as a 2 player</string>
+
+    <string name="setupPvpPage">Enter your names</string>
+    <string name="hintPlayer1Name">Player 1</string>
+    <string name="hintPlayer2Name">Player 2</string>
+    <string name="buttonSubmitNames">Submit</string>
+
+    <string name="gamePage">Battle</string>
+    <string name="currentPlayerLabel">Now playing: </string>
+    <string name="currentPlayerName">Player 1</string>
+    <string name="button_0_0"> </string>
+    <string name="button_0_1"> </string>
+    <string name="button_0_2"> </string>
+    <string name="button_1_0"> </string>
+    <string name="button_1_1"> </string>
+    <string name="button_1_2"> </string>
+    <string name="button_2_0"> </string>
+    <string name="button_2_1"> </string>
+    <string name="button_2_2"> </string>
+
+    <string name="endPage">Congrats! You finished the game</string>
+    <string name="winnerLabel">Winner: </string>
+    <string name="winnerName"> </string>
+    <string name="buttonMainMenu">Got to start page</string>
+</resources>
